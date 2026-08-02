@@ -1,0 +1,2 @@
+- https://htmx.org/docs/
+- https://htmx.org/examples/animations/
