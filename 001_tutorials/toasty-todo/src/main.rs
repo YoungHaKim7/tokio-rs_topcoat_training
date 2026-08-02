@@ -154,7 +154,7 @@ async fn create(cx: &Cx, Form(new_todo): Form<NewTodo>) -> Result<SeeOther> {
 // Parse the dynamic todo ID as an unsigned integer.
 // The struct name `TodoId` snake-cases to the `{todo_id}` route segment, and a
 // failed parse responds 400 (bad_request).
-#[path_param(error = bad_request)]
+#[path_param(error = bad_request("failed parse responds 400 (bad_request)"))]
 struct TodoId(u64);
 
 #[route(POST "/todos/{todo_id}/toggle")]

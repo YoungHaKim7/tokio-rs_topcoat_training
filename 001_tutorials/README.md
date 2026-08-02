@@ -4,6 +4,9 @@
 # Getting started
 - https://github.com/tokio-rs/topcoat/blob/main/crates/topcoat/docs/getting_started.md
 
+# 해외 유튜브 영상
+- [260731) Rust의 새로운 풀스택 프레임워크, Topcoat에 대해 알아야 할 7가지_자동 더빙 Francesco Ciulla](https://youtu.be/gvo9KzADsjQ?si=xMGk_x7AEaWmsdAA)
+
 # tailwind `Cargo.toml` patterns
 
 - `Cargo.toml`

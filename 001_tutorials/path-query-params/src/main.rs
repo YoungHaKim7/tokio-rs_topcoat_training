@@ -86,7 +86,7 @@ async fn posts(cx: &Cx) -> Result {
 //     error = bad_request("Post ID must be a number!"),
 // );
 
-#[path_param(error = bad_request)]
+#[path_param(error = bad_request("Post ID must be a number!"))]
 struct PostId(u32);
 
 #[page("/posts/{post_id}")]
