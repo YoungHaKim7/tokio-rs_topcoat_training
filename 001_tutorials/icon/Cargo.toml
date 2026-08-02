@@ -1,0 +1,15 @@
+[package]
+name = "icon"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.53.1", features = ["rt-multi-thread", "macros"] }
+topcoat = { version = "0.5.0", features = ["icon-iconify"] }
+
+[build-dependencies]
+# The build script only needs the Tailwind scanner, so disable the heavy
+# default feature set. (cargo cannot combine `workspace = true` with
+# `default-features = false`, so this entry is spelled out with a version.)
+topcoat = { version = "0.5.0", default-features = false, features = ["icon-iconify"] }
+
