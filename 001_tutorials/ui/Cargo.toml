@@ -1,0 +1,15 @@
+[package]
+name = "ui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.53.1", features = ["rt-multi-thread", "macros"] }
+topcoat = { version = "0.5.0", features = ["font-fontsource", "icon-iconify", "tailwind", "ui"]}
+
+[dev-dependencies]
+topcoat-ui = "0.5.0"
+
+[build-dependencies]
+# We cannot use `workspace = true` with `default-features = false`.
+topcoat = { version = "0.5.0", default-features = false, features = ["icon-iconify", "tailwind"] }
